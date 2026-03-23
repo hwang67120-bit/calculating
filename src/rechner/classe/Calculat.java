@@ -22,6 +22,7 @@ public class Calculat {
 
     }
 
+
     public String[] getOp() {
         return op;
     }
