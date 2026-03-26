@@ -23,9 +23,6 @@ public class Calculat {
     }
 
 
-    public String[] getOp() {
-        return op;
-    }
 
     public int getZahl() {
         return zahl;
@@ -35,9 +32,6 @@ public class Calculat {
         return num;
     }
 
-    public void setOp(String[] op) {
-        this.op = op;
-    }
 
     public void setZahl(int zahl) {
         this.zahl = zahl;
