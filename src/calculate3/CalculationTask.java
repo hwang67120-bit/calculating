@@ -24,7 +24,7 @@ public class CalculationTask {
 
         switch (operator) {
             case PLUS -> result = num1 + num2;
-            case MINUS -> result = num1 + num2;
+            case MINUS -> result = num1 - num2;
             case MULTIPLY -> result = num1 + num2;
             case DIVIDE -> {
                 if (num2 == 0) throw new ArithmeticException("0으로 나줄 수 없습니다");
