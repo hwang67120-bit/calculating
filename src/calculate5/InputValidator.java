@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class InputValidator {
 
+    //문자열이 숫자로 변환 가능한지 확인
     public static boolean isValidNumber(String input) {
 
         try {
@@ -18,6 +19,7 @@ public class InputValidator {
         return op.equals("+") || op.equals("-") || op.equals("*") || op.equals("/");
     }
 
+    //유효한 숫자가 입력될 때까지 계속 요청
     public static double getValidNumber(Scanner scanner) {
         String input  = "";
 
@@ -32,7 +34,7 @@ public class InputValidator {
             }
         }
     }
-
+        //유효한 연산자(+, -, *, /)가 입력될 때까지 계속 요청
         public static String getValidOperator (Scanner scanner){
             String operator;
 

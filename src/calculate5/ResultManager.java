@@ -14,19 +14,19 @@ public class ResultManager {
         resultList = new ArrayList<>();
     }
 
-    //결과 메서드
+    //결과 메서드: 계산 결과를 리스트에 추가
     public void addResult(double result){
         resultList.add(result);
     }
 
-    //합계 매서드
+    //합계 매서드: 모든 결과의 합계를 Stream으로 계산
     public double getTotalSum() {
         return resultList.stream()
                 .mapToDouble(Double::doubleValue)
                 .sum();
     }
 
-    //평균 메서드
+    //평균 메서드: 평균 계산
     public double getAverage(){
         return resultList.stream()
                 .mapToDouble(Double::doubleValue)
@@ -34,7 +34,7 @@ public class ResultManager {
                 .orElse(0.0);
     }
 
-    //양수 필터링매서드
+    //양수 필터링매서드: 양수 결과만 필터링
     public List<Double> getPositiveResults(){
 
         return resultList.stream()
@@ -42,7 +42,7 @@ public class ResultManager {
                 .collect(Collectors.toList());
     }
 
-    //최대값
+    //최대값 :최댓값, 최솟값 찾기
     public double getMaximum(){
         return resultList.stream()
                 .mapToDouble(Double::doubleValue)
